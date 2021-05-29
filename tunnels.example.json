@@ -1,0 +1,30 @@
+{
+    "servers": {
+        "mainVPS": {
+            "username": "user",
+            "address": "example.com",
+            "port": "22",
+            "sshKey": "./ssh_keys/ssh.key",
+            "tunnels": {
+                "localTunnel": {
+                    "tunnelL": {
+                        "localAddress": "127.0.0.1",
+                        "localPort": "123",
+                        "remoteAddress": "*",
+                        "remotePort": "123"
+                    }
+
+                },
+                "remoteTunnel": {
+                    "tunnelR": {
+                        "localAddress": "*",
+                        "localPort": "456",
+                        "remoteAddress": "127.0.0.1",
+                        "remotePort": "456"
+                    }
+                }
+            }
+        }
+    }
+    
+}

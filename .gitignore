@@ -1,0 +1,6 @@
+*.key
+tunnels.json
+__pycache__/
+*.code-workspace
+testing*
+*.ignore.*
