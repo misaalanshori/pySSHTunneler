@@ -38,7 +38,7 @@ def sshAccess(tname, sshCmd):
     while not threadKill and (ssh._proc.poll() is None):
         time.sleep(10)
         sshLine = ssh.readline().split("sshd ")
-        print(sshLine)
+        # print(sshLine)
         print("="*24)
         sshdData = []
         for i in sshLine:
